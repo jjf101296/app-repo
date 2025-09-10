@@ -3,7 +3,7 @@ pipeline {
   environment {
     AWS_REGION = "${env.AWS_REGION ?: 'ap-south-1'}"
     ECR_URI = "${env.ECR_URI ?: '025066250063.dkr.ecr.ap-south-1.amazonaws.com/myproject'}"
-    GITOPS_REPO = "https://github.com/your-org/gitops-repo.git"
+    GITOPS_REPO = "https://github.com/jjf101296/gitops-repo.git"
   }
   stages {
     stage('Checkout') {
